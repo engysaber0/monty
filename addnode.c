@@ -7,7 +7,7 @@
 */
 void addnode(stack_t **head, int n)
 {
-//first we create 2 pointers 1 for node and 2 for head for traversing
+/*first we create 2 pointers 1 for node and 2 for head for traversing*/
 stack_t *new_node, *ptr;
 
 ptr = *head;
