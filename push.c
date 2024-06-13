@@ -7,7 +7,6 @@
 */
 void f_push(stack_t **head, unsigned int counter)
 {
-//n is the int & j is the counter of args & flag to know stack or queue
 int n, j = 0, flag = 0;
 
 if (bus.arg)
@@ -16,7 +15,6 @@ if (bus.arg[0] == '-')
 j++;
 for (; bus.arg[j] != '\0'; j++)
 {
-//chech if it is not int
 if (bus.arg[j] > 57 || bus.arg[j] < 48)
 flag = 1;
 }
@@ -37,7 +35,6 @@ free(bus.content);
 free_stack(*head);
 exit(EXIT_FAILURE);
 }
-//to convert string to integers
 n = atoi(bus.arg);
 if (bus.lifi == 0)
 addnode(head, n);
